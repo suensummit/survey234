@@ -7,15 +7,8 @@
 <script type="text/javascript">
 
 var surveyData;
-d3.csv("survey1.csv", function(data) {
-	return {
-		start: new Date(+data.start, 0, 1),
-		end: new Date(+data.end, 0, 1),
-		sample: +data.sample,
-		kp: +data.kp,
-		lien: +data.lien
-	}
-	//surveyData = data;
+d3.csv("survey_tp.csv", function(data) {
+	surveyData = data;
     console.log(data);
 });
 
