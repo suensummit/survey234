@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<svg width="1000" height="500" ></svg>
+
+<script type="text/javascript" src="d3.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+
+var surveyData;
+d3.csv("survey1.csv", function(data) {
+	surveyData = data;
+    console.log(data);
+});
+
+</script>
+</body>
+</html>
